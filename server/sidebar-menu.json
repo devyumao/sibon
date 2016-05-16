@@ -1,0 +1,22 @@
+[
+    {
+        "text": "栏目",
+        "heading": "true"
+    }, 
+    {
+        "text": "页面一",
+        "sref": "app.view1",
+        "icon": "fa fa-file-o"
+    }, 
+    {
+        "text": "菜单",
+        "sref": "#",
+        "icon": "icon-folder",
+        "submenu": [
+            {
+                "text": "页面二",
+                "sref": "app.view2"
+            }
+        ]
+    }
+]

@@ -1,0 +1,26 @@
+<h3>页面一</h3>
+<div class="indicators-toolbar">
+    <div class="daterange-wrap input-group">
+        <span class="input-group-addon"><span class="fa fa-calendar"></span></span>
+        <input date-range-picker="" class="form-control daterange" type="text" ng-model="date" options="dateOption" />
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-4 text-center">
+        <p>准确率</p>
+        <canvas classyloader="" data-height="140" data-diameter="60" data-font-size="26px" data-percentage="{{accuracy}}" data-speed="10" data-line-color="{{colorByName('info')}}" data-remaining-line-color="{{colorByName('gray')}}" data-line-width="10"></canvas>
+    </div>
+    <div class="col-sm-4 text-center">
+        <p>召回/总流量</p>
+        <canvas classyloader="" data-height="140" data-diameter="60" data-font-size="26px" data-percentage="{{recall}}" data-speed="10" data-line-color="{{colorByName('success')}}" data-remaining-line-color="{{colorByName('gray')}}" data-line-width="10"></canvas>
+    </div>
+    <div class="col-sm-4 text-center">
+        <p>漏召回率</p>
+        <canvas classyloader="" data-height="140" data-diameter="60" data-font-size="26px" data-percentage="{{omission}}" data-speed="10" data-line-color="{{colorByName('yellow')}}" data-remaining-line-color="{{colorByName('gray')}}" data-line-width="10"></canvas>
+    </div>
+</div>
+<div class="panel panel-default panel-indicators">
+    <div class="panel-body">
+        <div echarts="" class="chart" option="{{chartOption}}" loading="{{chartLoading}}"></div>
+    </div>
+</div>
